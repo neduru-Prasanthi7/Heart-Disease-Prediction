@@ -1,137 +1,125 @@
-# Heart-Disease-Prediction
-
+#  Heart Disease  Prediction using Machine Learning
 
 ## 📌 Project Overview
-This project predicts the **risk of heart disease** using multiple **machine learning classification algorithms**.  
-The implementation follows a **modular approach using classes, objects, and functions**, ensuring clean and reusable code.
-
-Multiple models were trained and evaluated, and the **best model was selected using ROC–AUC analysis**.  
-Finally, the trained model was **saved using Pickle and deployed as a web application**.
+This project predicts the **risk of heart disease** using **Machine Learning classification algorithms**.  
+The complete implementation is done using **classes, objects, and functions**, following a modular and structured approach.  
+After comparing multiple models, **AdaBoost Classifier** was finalized as the best model and deployed as a **web application**.
 
 ---
 
 ## 🎯 Objective
-- Predict heart disease detected or not
-- Compare multiple ML classification models
-- Select the best-performing model using ROC–AUC
-- Deploy the model with a web interface
+To build an intelligent system that predicts whether a person has **heart disease or not** based on important medical features provided by the patient.
 
 ---
 
-## 🗂️ Dataset Processing
+## 🧹 Data Preprocessing
 
-### 🔹 Data Preparation
-- Dataset split into:
-  - **Independent variables (X)**
-  - **Dependent variable (y)**
-- Used `train_test_split` to create:X_train,X_test,y_train,y_test
+### ✔ Data Splitting
+- Independent variables → **X**
+- Dependent variable → **y**
+- Data split using **train_test_split()**
 
-- Checked for **null values**
+---
+
+### ✔ Null Value Check
+- Checked for missing values
 - ✅ No null values found
-- Dataset is **cleaned**
-- **Outliers detected and handled**
-- **Unnecessary columns removed** using feature selection
-- Dataset **balanced** to handle class imbalance
+- Dataset is **clean**
 
 ---
 
+### ✔ Outlier Detection & Handling
+- Outliers were identified
+- Proper techniques applied to handle them
 
-## ⚙️ Machine Learning Models Used
+---
 
-The following models were trained and evaluated:
+### ✔ Feature Selection
+- Removed unnecessary and less important columns
+- Improved model performance and efficiency
 
-- K-Nearest Neighbors (KNN)
-- Naive Bayes
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- AdaBoost Classifier
-- Gradient Boosting
-- Xtreme Gradient Boosting (XGBoost)
+---
+
+### ✔ Data Balancing
+- Dataset was balanced to handle class imbalance
+- Ensured fair learning for both classes
+
+---
+
+## 🤖 Machine Learning Models Used
+
+| Model | Test Accuracy (%) |
+|------|------------------|
+| KNN | 80 |
+| Naive Bayes | 80 |
+| Logistic Regression | 84 |
+| Decision Tree | 80 |
+| Random Forest | 82 |
+| **AdaBoost Classifier** | **90 ✅** |
+| Gradient Boosting | 84 |
+| Xtreme Gradient Boosting | 57 |
 
 ---
 
 ## 📊 Model Evaluation Metrics
-
-Each model was evaluated using:
-- ✔ Accuracy
+For each model, the following were evaluated:
+- ✔ Test Accuracy
 - ✔ Classification Report
 - ✔ Confusion Matrix
 - ✔ ROC Curve
-- ✔ AUC Score
+- ✔ AUC-ROC Score
+
+Based on ROC and AUC-ROC curves, **AdaBoost Classifier** performed the best.
 
 ---
 
-## 📈 ROC–AUC Curve Analysis
+## 🏆 Best Model
+**AdaBoost Classifier**
+- Highest accuracy: **90%**
+- Best ROC-AUC curve
+- Good generalization performance
 
-ROC curves were plotted for all models to compare performance.
+---
+
+## 💾 Model Saving
+- Final trained model saved using **Pickle**
+- Enables reuse without retraining
+
+
+
+## 🗂️ Dataset Description
+
+### 🔹 Input Features (User Inputs)
+The patient enters the following details:
+
+| Feature | Description |
+|------|------------|
+| age | Age of the patient |
+| sex | Gender (0 = Female, 1 = Male) |
+| cp | Chest pain type |
+| thalach | Maximum heart rate achieved |
+| oldpeak | ST depression |
+| slope | Slope of peak exercise ST segment |
+| thal | Thalassemia |
+
+---
+
+### 🔹 Output
+- **0** → No Heart Disease Detected  
+- **1** → Heart Disease Detected  
 
 
 ---
 
-## 🏆 Best Model Selection
-
-After comparing all evaluation metrics:
-
-### 🥇 **Final Model: AdaBoost Classifier**
-
-**Reasons:**
-- Highest AUC score
-- Better generalization
-- Balanced precision and recall
-- Strong performance on unseen data
-
----
-
-## 💾 Model Saving (Pickle)
-
-The following were saved using Pickle:
-- Trained AdaBoost model
-- Scaler
-- Selected features
+- Patients enter medical details
+- The model predicts heart disease risk instantly
 
 
 ---
 
----
-
-## 🌐 Web Application Deployment
-
-- Created a web interface
-- Users input medical details
-- Model predicts heart disease detecetd or not
-- Prediction displayed on the webpage
+## ✅ Conclusion
+This project successfully builds and deploys a **heart disease risk prediction system** using machine learning.  
+Among all evaluated models, **AdaBoost Classifier** achieved the best performance and was implemented in a real-time web application.
 
 ---
-
-## 📦 requirements.txt
-
-A `requirements.txt` file is included containing **all required libraries** to run the project.
-
----
-
-## 🛠️ Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Flask
-- Pickle
-- HTML / CSS
-
----
-
-
-
-## 🚀 Conclusion
-This project demonstrates a **complete machine learning workflow**, from data preprocessing to deployment.  
-Using ROC–AUC analysis, **AdaBoost Classifier** was selected as the best model for heart disease risk prediction.
-
----
-
-
-- Selected features
 
