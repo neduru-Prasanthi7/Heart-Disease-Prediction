@@ -1,5 +1,5 @@
 # Heart-Disease-Prediction
-#  Heart Disease Prediction
+
 
 ## 📌 Project Overview
 This project predicts the **risk of heart disease** using multiple **machine learning classification algorithms**.  
@@ -11,7 +11,7 @@ Finally, the trained model was **saved using Pickle and deployed as a web applic
 ---
 
 ## 🎯 Objective
-- Predict heart disease risk
+- Predict heart disease detected or not
 - Compare multiple ML classification models
 - Select the best-performing model using ROC–AUC
 - Deploy the model with a web interface
@@ -24,7 +24,7 @@ Finally, the trained model was **saved using Pickle and deployed as a web applic
 - Dataset split into:
   - **Independent variables (X)**
   - **Dependent variable (y)**
-- Used `train_test_split` to create:
+- Used `train_test_split` to create:X_train,X_test,y_train,y_test
 
 - Checked for **null values**
 - ✅ No null values found
@@ -35,29 +35,6 @@ Finally, the trained model was **saved using Pickle and deployed as a web applic
 
 ---
 
-## 🔄 Project Workflow
-Load Dataset
-↓
-Split X and y
-↓
-Train-Test Split
-↓
-Outlier Handling
-↓
-Feature Selection
-↓
-Data Balancing
-↓
-Model Training
-↓
-Model Evaluation
-↓
-Best Model Selection
-↓
-Pickle Serialization
-↓
-Web Deployment
----
 
 ## ⚙️ Machine Learning Models Used
 
