@@ -1,0 +1,45 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import sklearn
+import sys
+import os
+import warnings
+warnings.filterwarnings('ignore')
+from log_code import setup_logging
+logger = setup_logging('imbalanced_data')
+from scipy import stats
+from imblearn.over_sampling import SMOTE
+from sklearn.preprocessing import StandardScaler
+from all_models import common
+import pickle
+
+def balanced_data(X_train,y_train,X_test,y_test):
+    try:
+        logger.info(f'Before number of rows for class 1:{sum(y_train == 1)}')
+        logger.info(f'Before number of rows for class 0:{sum(y_train == 0)}')
+        sm_reg = SMOTE(random_state = 42)
+        X_train_bal,y_train_bal = sm_reg.fit_resample(X_train,y_train)
+        logger.info(f'After number of rows for class 1:{sum(y_train_bal == 1)}')
+        logger.info(f'After number of rows for class 0:{sum(y_train_bal == 0)}')
+        logger.info(f'{X_train_bal.shape}')
+        logger.info(f'{y_train_bal.shape}')
+        logger.info(f'{X_train_bal.sample(4)}')
+        sc = StandardScaler()
+        sc.fit(X_train_bal)
+        X_train_bal_scaled = sc.transform(X_train_bal)
+        X_test_scaled = sc.transform(X_test)
+        logger.info(f'{X_train_bal_scaled}')
+
+        with open('scalar.pkl','wb') as f:
+            pickle.dump(sc,f)
+        common(X_train_bal_scaled,y_train_bal,X_test_scaled, y_test)
+
+
+  
+
+
+    except Exception as e:
+        error_type, error_msg, error_line = sys.exc_info()
+        logger.info(f'Error in Line no : {error_line.tb_lineno}: due to {error_msg}')

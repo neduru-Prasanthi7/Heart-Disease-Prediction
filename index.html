@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heart Disease Prediction</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<p><h1>Heart Disease Prediction</h1></p>
+
+<div class="container text-center">
+
+    <!-- ORDER OF INPUTS MUST NOT CHANGE -->
+    <form action="/predict" method="POST">
+
+        <input type="number" name="age"
+               placeholder="Age" required><br>
+
+        <input type="number" name="sex"
+               placeholder="Sex (0 = Female, 1 = Male)" required><br>
+
+        <input type="number" name="cp"
+               placeholder="Chest Pain Type (0–3)" required><br>
+
+        <input type="number" name="thalach"
+               placeholder="Maximum Heart Rate" required><br>
+
+        <input type="number" step="any" name="oldpeak"
+               placeholder="Oldpeak (ST Depression)" required><br>
+
+        <input type="number" name="slope"
+               placeholder="Slope (0–2)" required><br>
+
+        <input type="number" name="thal"
+               placeholder="Thal (0–2)" required><br>
+
+        <button class="btn btn-secondary">Submit</button>
+
+    </form>
+
+    <br>
+
+    <h3><strong>{{ prediction_text }}</strong></h3>
+
+    <br><br>
+
+    <p><h2>Project By Sai Prasanthi</h2></p>
+    <p>Data Scientist and NLP Engineer</p>
+
+</div>
+
+</body>
+</html>

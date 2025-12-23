@@ -1,0 +1,25 @@
+2025-12-24 00:19:15,047 - INFO - columns which are needed to remove from constant technique :Index(['fbs_yeo_trim'], dtype='object')
+2025-12-24 00:19:15,051 - INFO - columns which are needed to remove from quasi constant technique :Index(['trestbps_yeo_trim', 'chol_yeo_trim', 'exang_yeo_trim', 'ca_yeo_trim'], dtype='object')
+2025-12-24 00:19:15,056 - INFO - Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'restecg_yeo_trim',
+       'thalach_yeo_trim', 'oldpeak_yeo_trim', 'slope_yeo_trim',
+       'thal_yeo_trim'],
+      dtype='object') --> (242, 8)
+2025-12-24 00:19:15,060 - INFO - Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'restecg_yeo_trim',
+       'thalach_yeo_trim', 'oldpeak_yeo_trim', 'slope_yeo_trim',
+       'thal_yeo_trim'],
+      dtype='object') --> (61, 8)
+2025-12-24 00:19:15,072 - INFO - restecg_yeo_trim    1.491137e-01
+age_yeo_trim        3.193297e-04
+sex_yeo_trim        1.422852e-06
+slope_yeo_trim      1.043726e-08
+thal_yeo_trim       7.461570e-09
+thalach_yeo_trim    2.292345e-10
+oldpeak_yeo_trim    8.244767e-12
+cp_yeo_trim         3.334472e-13
+dtype: float64
+2025-12-24 00:19:15,072 - INFO - After :Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'thalach_yeo_trim',
+       'oldpeak_yeo_trim', 'slope_yeo_trim', 'thal_yeo_trim'],
+      dtype='object') --> (242, 7)
+2025-12-24 00:19:15,072 - INFO - After :Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'thalach_yeo_trim',
+       'oldpeak_yeo_trim', 'slope_yeo_trim', 'thal_yeo_trim'],
+      dtype='object') --> (61, 7)

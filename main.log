@@ -1,0 +1,73 @@
+2025-12-24 00:19:14,823 - INFO - Data loaded successfully
+2025-12-24 00:19:14,823 - INFO - Total number of rows : 303
+2025-12-24 00:19:14,823 - INFO - Total number of columns : 14
+2025-12-24 00:19:14,823 - INFO - Check null values  : age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+target      0
+dtype: int64
+2025-12-24 00:19:14,858 - INFO - None
+2025-12-24 00:19:14,865 - INFO - X_train columns :Index(['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach',
+       'exang', 'oldpeak', 'slope', 'ca', 'thal'],
+      dtype='object')
+2025-12-24 00:19:14,870 - INFO - X_test columns : Index(['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach',
+       'exang', 'oldpeak', 'slope', 'ca', 'thal'],
+      dtype='object')
+2025-12-24 00:19:14,871 - INFO - 215    0
+123    1
+55     1
+54     1
+69     1
+Name: target, dtype: int64
+2025-12-24 00:19:14,871 - INFO - 292    0
+219    0
+232    0
+193    0
+179    0
+Name: target, dtype: int64
+2025-12-24 00:19:14,873 - INFO - Total training data size : (242, 13)
+2025-12-24 00:19:14,873 - INFO - Total testing data size : (61, 13)
+2025-12-24 00:19:14,873 - INFO -  Before training data :Index(['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach',
+       'exang', 'oldpeak', 'slope', 'ca', 'thal'],
+      dtype='object')
+2025-12-24 00:19:14,873 - INFO - Before training data :Index(['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach',
+       'exang', 'oldpeak', 'slope', 'ca', 'thal'],
+      dtype='object')
+2025-12-24 00:19:15,041 - INFO - After training data  : Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'trestbps_yeo_trim',
+       'chol_yeo_trim', 'fbs_yeo_trim', 'restecg_yeo_trim', 'thalach_yeo_trim',
+       'exang_yeo_trim', 'oldpeak_yeo_trim', 'slope_yeo_trim', 'ca_yeo_trim',
+       'thal_yeo_trim'],
+      dtype='object')-->(242, 13)
+2025-12-24 00:19:15,041 - INFO - After testing data  : Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'trestbps_yeo_trim',
+       'chol_yeo_trim', 'fbs_yeo_trim', 'restecg_yeo_trim', 'thalach_yeo_trim',
+       'exang_yeo_trim', 'oldpeak_yeo_trim', 'slope_yeo_trim', 'ca_yeo_trim',
+       'thal_yeo_trim'],
+      dtype='object')-->(61, 13)
+2025-12-24 00:19:15,041 - INFO -  Before : Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'trestbps_yeo_trim',
+       'chol_yeo_trim', 'fbs_yeo_trim', 'restecg_yeo_trim', 'thalach_yeo_trim',
+       'exang_yeo_trim', 'oldpeak_yeo_trim', 'slope_yeo_trim', 'ca_yeo_trim',
+       'thal_yeo_trim'],
+      dtype='object') -> (242, 13)
+2025-12-24 00:19:15,041 - INFO - Before : Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'trestbps_yeo_trim',
+       'chol_yeo_trim', 'fbs_yeo_trim', 'restecg_yeo_trim', 'thalach_yeo_trim',
+       'exang_yeo_trim', 'oldpeak_yeo_trim', 'slope_yeo_trim', 'ca_yeo_trim',
+       'thal_yeo_trim'],
+      dtype='object') -> (61, 13)
+2025-12-24 00:19:15,072 - INFO -  Before : Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'thalach_yeo_trim',
+       'oldpeak_yeo_trim', 'slope_yeo_trim', 'thal_yeo_trim'],
+      dtype='object') -> (242, 7)
+2025-12-24 00:19:15,072 - INFO - Before : Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'thalach_yeo_trim',
+       'oldpeak_yeo_trim', 'slope_yeo_trim', 'thal_yeo_trim'],
+      dtype='object') -> (61, 7)
+2025-12-24 00:19:15,077 - INFO - Before number of rows for class 1:133
+2025-12-24 00:19:15,077 - INFO - Before number of rows for class 0:109

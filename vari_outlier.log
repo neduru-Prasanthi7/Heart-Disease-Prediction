@@ -1,0 +1,16 @@
+2025-12-24 00:19:14,873 - INFO - Before training data Index(['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach',
+       'exang', 'oldpeak', 'slope', 'ca', 'thal'],
+      dtype='object')--> (242, 13)
+2025-12-24 00:19:14,873 - INFO - Before testing data :Index(['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach',
+       'exang', 'oldpeak', 'slope', 'ca', 'thal'],
+      dtype='object') --> (61, 13)
+2025-12-24 00:19:15,039 - INFO - After training data :Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'trestbps_yeo_trim',
+       'chol_yeo_trim', 'fbs_yeo_trim', 'restecg_yeo_trim', 'thalach_yeo_trim',
+       'exang_yeo_trim', 'oldpeak_yeo_trim', 'slope_yeo_trim', 'ca_yeo_trim',
+       'thal_yeo_trim'],
+      dtype='object') ---->(242, 13)
+2025-12-24 00:19:15,041 - INFO - After testing data :Index(['age_yeo_trim', 'sex_yeo_trim', 'cp_yeo_trim', 'trestbps_yeo_trim',
+       'chol_yeo_trim', 'fbs_yeo_trim', 'restecg_yeo_trim', 'thalach_yeo_trim',
+       'exang_yeo_trim', 'oldpeak_yeo_trim', 'slope_yeo_trim', 'ca_yeo_trim',
+       'thal_yeo_trim'],
+      dtype='object') ---->(61, 13)
